@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffffff, #f3f4f8);
+      color: black;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25), 0 0 12px rgba(161, 140, 209, 0.4);
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .project-card h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .fixed-back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #ffffff;
+      color: #a18cd1;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      z-index: 1000;
+    }
+
+    .fixed-back:hover {
+      background: #a18cd1;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="fixed-back">← 回首頁</a>
+
+  <div class="container">
+    <h1>我的學習歷程</h1>
+
+    <div class="projects-grid">
+      <div class="project-card" onclick="location.href='project1.html'">
+        <img src="song.jpg" class="card-thumb" alt="英語歌唱比賽">
+        <h2>2024.05.24 英語歌唱比賽</h2>
+        <p>More Than Just a Song: A Meaningful End to Our Freshman Year</p>
+      </div>
+
+      <div class="project-card" onclick="location.href='project2.html'">
+        <img src="AI model 2.jpg" class="card-thumb" alt="AI探索課程">
+        <h2>2024.06.12 探索 AI 課程</h2>
+        <p>Learning by Doing — The Tripo Experience</p>
+      </div>
+
+      <div class="project-card" onclick="location.href='project3.html'">
+        <img src="ieg1.jpg" class="card-thumb" alt="IEG結業式">
+        <h2>2025.06.06 IEG 結業式</h2>
+        <p>My Journey with the International Exchange Group</p>
+      </div>
+
+      <div class="project-card" onclick="location.href='project4.html'">
+        <img src="coding.jpg" class="card-thumb" alt="專題圖示">
+        <h2>zerojudge 解題紀錄</h2>
+        <p></p>
+      </div>
+
+      <!-- <div class="project-card" onclick="location.href='project5.html'">
+        <img src="project5.jpg" class="card-thumb" alt="專題圖示">
+        <h2>Project 5</h2>
+        <p>A mini AI tool project built with real-time feedback and visual results.</p>
+      </div> -->
+
+    </div>
+  </div>
+</body>
+</html>

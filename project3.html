@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: black;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1); /* 淺灰陰影 */
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .project-image {
+      width: 45%;
+      max-width: none;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 新增 */
+      transition: transform 0.3s ease;
+    }
+    .project-image:hover {
+      transform: scale(1.03); 
+    }
+
+    .description {
+      font-size: 22px;
+      line-height: 1.8;
+      color: #000000;
+      background-color: #f9f9f9; /* 淡灰背景 */
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ffffff;
+      color: #a18cd1;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: gray;
+      color:white
+    }
+    .fixed-back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #ffffff;
+      color: #a18cd1;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      z-index: 1000;
+    }
+
+    .fixed-back:hover {
+      background: #a18cd1;
+      color: white;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    .caption {
+      font-size: 22px;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <a href="project.html" class="fixed-back">← Back</a>
+  <div class="container">
+
+    <p style="font-size: 28px; font-weight:bold;"> IEG結業式 <br><span>International Exchange Group</span></p>
+    <!-- <img src="photo/ieg1.jpg" alt="AI 圖" class="project-image"> -->
+
+    <figure>
+      <img src="ieg1.jpg" alt="ieg" class="project-image">
+      <figcaption class="caption">2025.06.06<br/>台中二中期末交流團期末頒獎</figcaption>
+    </figure>
+
+
+    <p class="description">
+      IEG為台中二中特色社團，全名為台中二中國際交流團。<br/>
+      在高一準備面試時忐忑的心情到入選的開心，<br/>高一一整年和同屆夥伴們一起在學長姐的帶領下完成許多活動，<br/>例如：大甲美食文化拍攝介紹、國中生校園導覽等等。
+      高二接下社團幹部公關長一責，與其他幹部一同帶領社團完成準備及完成任務，<br/>例如：芬蘭學生校園導覽、芬蘭學生大甲文化介紹、參訪國資圖並和美國在台協會文化官Anne Foss交流、政大參訪與交流、參與美國政經局勢分析演講、鹿港文化介紹與闖關活動等等。<br/>
+      在兩年社團生活中獲得滿滿收穫，<br/>在當幹部期間除了英語能力，製作簡報、處理衝突、團隊溝通的能力都相當重要，<br/>也因為高二這一年的幹部生活學到了許多，收穫良多。</p>
+   <!-- 芬蘭 -->
+    <figure>
+      <img src="iegfanland.jpg" alt="ieg" class="project-image">
+      <figcaption class="caption">2024.10.01<br/>接待芬蘭學生並帶他們熟悉二中校園，<br/>當天活動除了和芬蘭學生介紹二中豐富的國際交流經驗，<br/>也帶著他們試穿二中校服並贈送二中特色小書包。<br/>而後，我們也透過一起唱歌來增進感情，是一個很有趣的交流經驗。</figcaption>
+    </figure>
+    <!--大甲 -->
+    <figure>
+        <img src="dacha.jpg" alt="ieg" class="project-image">
+        <figcaption class="caption">2024.10.07<br/> 接待芬蘭學生並介紹大甲的媽祖文化以及其芋頭特色美食。<br/>我們當天也實際走訪一些大甲景點。<br/>大甲行程結束後也有去高美濕地，和芬蘭學生一起感受自然之美。</figcaption>
+    </figure>
+     <!-- International College of Innovation (ICI)的學生交流 -->
+     <figure>
+      <img src="meeting.jpg" alt="ieg" class="project-image">
+      <figcaption class="caption">2024.12.20 <br/>我們到政治大學與政大的創新國際學院International College of Innovation (ICI)的學生交流， <br/>聽到許多不同國家的國際學生分享他們的求學經驗以及文化衝擊，是很有趣味的一次經驗！
+        <br/>另外，當天下午我們也有到台北故宮參訪，欣賞古物之美。</figcaption>
+    </figure>
+
+    <!-- 鹿港 -->
+     <figure>
+      <img src="iegloogan.jpg" alt="ieg" class="project-image">
+      <figcaption class="caption">2024.12.27<br/>社團到鹿港進行實地考察，為下學期的闖關活動預作準備，<br/>我們實地走訪鹿港老街與桂花藝術村，了解許多鹿港古早味美食及歷史意義。</figcaption>
+     </figure>
+    <!-- 美國在台協會  -->
+    <figure>
+      <img src="Foriegner.jpg" alt="ieg" class="project-image">
+      <figcaption class="caption">2024.10.18<br/>IEG到國立資訊圖書館與美國在台協會 (AIT)的文化官Anne Foss進行會面交流，<br/>我們透過文化官分享她的工作內容、文化衝擊、台美差異更了解一些這份工作的獨特性以及有趣之處。</figcaption>
+     </figure>
+   
+
+      
+    <p class="description">在兩年社團生活中獲得滿滿收穫，在當幹部期間除了英語能力，製作簡報、處理衝突、團隊溝通的能力都相當重要，也因為高二這一年的幹部生活學到了許多，收穫良多。</p>
+   
+    
+    <a href="project.html" class="back-button">Back to Projects</a>
+  </div>
+</body>
+</html>
